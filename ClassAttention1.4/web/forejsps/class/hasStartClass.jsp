@@ -29,8 +29,33 @@
 
 <div id="output"></div>
 <script>
+    var times;
+    ajax();
+    function ajax(option){
+        var xhr = null;
+        if(window.XMLHttpRequest){
+            xhr = new window.XMLHttpRequest();
+        }else{ // ie
+            xhr = new ActiveObject("Microsoft")
+        }
+        // 通过get的方式请求当前文件
+        xhr.open("get","/");
+        xhr.send(null);
+        // 监听请求状态变化
+        xhr.onreadystatechange = function(){
+            var time = null,
+                times = null;
+            if(xhr.readyState===2){
+                // 获取响应头里的时间戳
+                time = xhr.getResponseHeader("Date");
+                console.log(xhr.getAllResponseHeaders())
+                times = new Date(time);
+               // document.getElementById("time").innerHTML = "服务器时间是："+curDate.getFullYear()+"-"+(curDate.getMonth()+1)+"-"+curDate.getDate()+" "+curDate.getHours()+":"+curDate.getMinutes()+":"+curDate.getSeconds();
+            }
+        }
+    }
     jQuery(function () {
-        jQuery('#output').qrcode("${basePath}"+"${classId}");
+        jQuery('#output').qrcode("${basePath}"+"${classId}"+times.getSeconds());
     })
 </script>
 <%--<p>"${uid}"+"&"+"${dateId}"</p>--%>
@@ -96,6 +121,7 @@
     websocket.onclose = function () {
         setMessageInnerHTML("close");
     }
+
 
 </script>
 </html>

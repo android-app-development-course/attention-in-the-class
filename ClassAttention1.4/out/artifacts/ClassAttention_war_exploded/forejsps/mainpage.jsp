@@ -121,14 +121,23 @@
         .table-hover > tbody > tr:hover > th {
             background-color: #f5f5f5;
         }
-
+        .myusername{
+            float: right;
+            padding: 11px 20px 0px 10px;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            font-family: Tahoma;
+            outline: none;
+        }
     </style>
 
     <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
 <c:if test="${user == null}">
-    <a href="head.jsp">注册/登陆</a>
+    <a href="head.jsp"></a>
 </c:if>
 <header class="top">
 
@@ -140,7 +149,7 @@
                 <li><a href="head.jsp">注册/登陆</a></li>
             </c:if>
             <c:if test="${user != null}">
-                <li>${user.username}</li>
+                <li class="myusername">${user.username}</li>
                 <li><a href="">历史课堂</a></li>
                 <li><a href="lesson.jsp">我的课堂</a></li>
             </c:if>
@@ -152,14 +161,6 @@
     <div class="one">
         <table>
             <tr>
-                <td>
-                    <div id="output"></div>
-                </td>
-                <script>
-                    jQuery(function () {
-                        jQuery('#output').qrcode("http://jetienne.com");
-                    })
-                </script>
                 <td>
                     <div class="row">
                         <div class="col-md-6">

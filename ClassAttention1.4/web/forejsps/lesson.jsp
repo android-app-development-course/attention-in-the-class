@@ -113,7 +113,7 @@
 </head>
 <body text="#68228B" onload="setInterval('clock()',1000)">
 <c:if test="${user == null}">
-    <a href="head.jsp">注册/登陆</a>
+    <script>window.location.href='mainpage.jsp'</script>
 </c:if>
 <header class="top">
 
