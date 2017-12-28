@@ -1,115 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link href="../css/myStyle.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript">
 
-    var websocket = null;
-    //地址
-    websocket = new WebSocket("ws://localhost:8080/websocket/onClass/${classId}");
-    setMessageInnerHTML("ws://localhost:8080/websocket/onClass/${classId}");
-    //连接发生错误的回调方法
-    websocket.onerror = function () {
-        setMessageInnerHTML("error");
-    };
-
-    //连接成功建立的回调方法
-    websocket.onopen = function (event) {
-        setMessageInnerHTML("open");
-    }
-
-    //接收到消息的回调方法
-    websocket.onmessage = function (event) {
-        setMessageInnerHTML(event.data);
-    }
-
-    //连接关闭的回调方法
-    websocket.onclose = function () {
-        setMessageInnerHTML("close");
-    }
-
-    //监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
-    window.onbeforeunload = function () {
-        websocket.close();
-    }
-
-    function setMessageInnerHTML(innerHTML) {
-
-
-        //解析JSON
-       // var json = {  contry:{ area:{ man:"12万",  women:"10万" } } };
-        var obj = eval(message);
-        //alert(obj.constructor);
-      //  alert(obj.contry.area.women);
-        document.getElementById('message').innerHTML += innerHTML + '<br/>';
-        addRow(obj.schoolId,obj.userName);
-    }
-
-        //关闭连接
-        function closeWebSocket() {
-
-            var closeJson ={"isStudent": false, "message": "close","classId": ${classId}};
-            setMessageInnerHTML(JSON.stringify(closeJson));
-            websocket.send(JSON.stringify(closeJson));
-            websocket.close();
-        }
-        //发送消息
-    function send() {
-        var message = document.getElementById('text').value;
-        websocket.send(message);
-    }
-
-    websocket.onclose = function () {
-        setMessageInnerHTML("close");
-    }
-
-    //增加一行
-    var nowsrow=1;
-    function addRow(schoolId,userNames) {
-        var varrow=document.getElementById('login_information').insertRow(0);
-
-        var one=varrow.insertCell(0);
-        var two=varrow.insertCell(1);
-        var three=varrow.insertCell(2);
-        var four=varrow.insertCell(3);
-        one.innerHTML=nowsrow;
-
-        //添加学号
-        two.innerHTML=schoolId;
-        //添加名字
-        three.innerHTML=userNames;
-        var d=new Date();
-        four.innerHTML=d.getHours()+":"+d.getMinutes();
-        nowsrow=nowsrow+1;
-    }
-    function addTbody(oTbody){
-
-        var oTable = document.getElementById('login_information');
-        //创建tbody
-        var oTbody = oTable.tbody;
-        //  document.createElement("tbody");
-
-        var tr = document.createElement("tr");
-        var one=document.createElement("td");      //新建一个td类型的Element节点
-        var two=document.createElement("td");
-        var three=document.createElement("td");
-        var four=document.createElement("td");
-        one.innerHTML = nowsrow;
-        tr.appendChild(one);
-        two.innerHTML = "NEW CELL2";
-        tr.appendChild(two);
-        three.innerHTML = "NEW CELL3";
-        tr.appendChild(three);
-        var d=new Date();
-        four.innerHTML =d.getHours()+":"+d.getMinutes();
-
-        tr.appendChild(four);
-        oTbody.appendChild(tr);
-        oTable.appendChild(oTbody);
-
-
-        nowsrow=nowsrow+1;
-    }
-</script>
 <head>
     <meta charset="UTF-8">
     <title>Attention</title>
@@ -143,36 +35,164 @@
         }
         table table {
             /*设置相邻单元格的边框间的距离*/
-            border-spacing: 0;
+            border-spacing: 1;
             /*表格设置合并边框模型*/
             border-collapse: collapse;
             text-align: center;
             width: 400px;
             height: 250px;
+            overflow:hidden;
+            border:1px solid #d3d3d3;
+            background:#fefefe;
+            margin:5% auto 0;
+            -moz-border-radius:5px; /* FF1+ */
+            -webkit-border-radius:5px; /* Saf3-4 */
+            border-radius:5px;
+            -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
         }
-        /*关键设置 tbody出现滚动条*/
-        table table tbody {
-            display: block;
+        table table th  td {padding:18px 28px 18px; text-align:center; }
+        td  table th {padding-top:22px; text-shadow: 1px 1px 1px #fff; background:#e8eaeb;}
+        td table td {border-top:1px solid #e0e0e0; border-right:1px solid #e0e0e0;}
+        tr.odd-row td {background:#f6f6f6;}
+        td.first, th.first {text-align:left}
+        td.last {border-right:none;}
+        /*
+	Background gradients are completely unnecessary but a neat effect.
+	*/
 
-            height: 250px;
-            overflow-y: auto;
-            overflow-x: hidden;
+       td table td {
+            background: -moz-linear-gradient(100% 25% 90deg, #fefefe, #f9f9f9);
+            background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f9f9f9), to(#fefefe));
         }
 
-        table table ,
-        table table tbody tr {
-            display: table;
-            table-layout: fixed;
+        td table  tr.odd-row td {
+            background: -moz-linear-gradient(100% 25% 90deg, #f6f6f6, #f1f1f1);
+            background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f1f1f1), to(#f6f6f6));
         }
-        /*关键设置：滚动条默认宽度是16px 将thead的宽度减16px*/
-        table table thead {
-            width: calc( 100% - 1em)
-        }
-    </style>
 
+        td table  th {
+            background: -moz-linear-gradient(100% 20% 90deg, #e8eaeb, #ededed);
+            background: -webkit-gradient(linear, 0% 0%, 0% 20%, from(#ededed), to(#e8eaeb));
+        }
+</style>
+
+
+    <script type="text/javascript">
+/*
+        var websocket = null;
+        //地址
+        websocket = new WebSocket("ws://localhost:8080/websocket/onClass/${classId}");
+        setMessageInnerHTML("ws://localhost:8080/websocket/onClass/${classId}");
+        //连接发生错误的回调方法
+        websocket.onerror = function () {
+            setMessageInnerHTML("error");
+        };
+
+        //连接成功建立的回调方法
+        websocket.onopen = function (event) {
+            setMessageInnerHTML("open");
+        }
+
+        //接收到消息的回调方法
+        websocket.onmessage = function (event) {
+            setMessageInnerHTML(event.data);
+        }
+
+        //连接关闭的回调方法
+        websocket.onclose = function () {
+            setMessageInnerHTML("close");
+        }
+
+        //监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
+        window.onbeforeunload = function () {
+            websocket.close();
+        }
+
+        function setMessageInnerHTML(innerHTML) {
+
+
+            //解析JSON
+            // var json = {  contry:{ area:{ man:"12万",  women:"10万" } } };
+            var obj = eval(message);
+            //alert(obj.constructor);
+            //  alert(obj.contry.area.women);
+            document.getElementById('message').innerHTML += innerHTML + '<br/>';
+            addRow(obj.schoolId,obj.userName);
+        }
+
+        //关闭连接
+        function closeWebSocket() {
+
+            var closeJson ={"isStudent": false, "message": "close","classId": ${classId}};
+            setMessageInnerHTML(JSON.stringify(closeJson));
+            websocket.send(JSON.stringify(closeJson));
+            websocket.close();
+        }
+        //发送消息
+        function send() {
+            var message = document.getElementById('text').value;
+            websocket.send(message);
+        }
+
+        websocket.onclose = function () {
+            setMessageInnerHTML("close");
+        }
+*/
+    </script>
+    <script>
+        //增加一行
+        var nowsrow=1;
+        function addRow() {
+            var varrow=document.getElementById('login_information').insertRow(nowsrow);
+
+            var one=varrow.insertCell(0);
+            var two=varrow.insertCell(1);
+            var three=varrow.insertCell(2);
+            var four=varrow.insertCell(3);
+            one.innerHTML=nowsrow;
+
+            //添加学号
+            two.innerHTML="NEW CELL2";
+            //添加名字
+            three.innerHTML="NEW CELL2";
+            var d=new Date();
+            four.innerHTML=d.getHours()+":"+d.getMinutes();
+            nowsrow=nowsrow+1;
+        }
+        function addTbody(oTbody){
+
+            var oTable = document.getElementById('login_information');
+            //创建tbody
+            var oTbody = oTable.tbody;
+            //  document.createElement("tbody");
+
+            var tr = document.createElement("tr");
+            var one=document.createElement("td");      //新建一个td类型的Element节点
+            var two=document.createElement("td");
+            var three=document.createElement("td");
+            var four=document.createElement("td");
+            one.innerHTML = nowsrow;
+            tr.appendChild(one);
+            two.innerHTML = "NEW CELL2";
+            tr.appendChild(two);
+            three.innerHTML = "NEW CELL3";
+            tr.appendChild(three);
+            var d=new Date();
+            four.innerHTML =d.getHours()+":"+d.getMinutes();
+
+            tr.appendChild(four);
+            oTbody.appendChild(tr);
+            oTable.appendChild(oTbody);
+
+
+            nowsrow=nowsrow+1;
+        }
+    </script>
     <script  src="https://unpkg.com/vue"></script>
 </head>
-<body text="#68228B" onload="setInterval('clock()',1000)">
+
+<body>
 <header class="top">
 
     <nav class="gongneng">
@@ -192,7 +212,7 @@
                 <td><image src="../images/二维码.png" /> </td>
                 <td><div class="row">
                     <div class="col-md-6">
-                        <table id="login_information" class="table table-striped table-bordered table-hover" cellspacing="10px" border="1">
+                        <table id="login_information"cellspacing="10px" border="1">
                             <tr>
                                 <th>序号</th>
                                 <th>姓名</th>
