@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.qrcode.min.js"></script>
+<link href="../css/myStyle.css" rel="stylesheet" type="text/css" />
+<style>
+    body{
+        background-image:url("../images/背景图.jpg");
+        background-size:100% 100%;
+        background-attachment:fixed;
+        background-repeat:no-repeat;
+        margin:0px;
+    }
+    nav ul {
+        float:right;
+        margin: 5px 0px 0px 0px;
+        padding: 0 0 0 0;
+        width: 50%;
+        list-style: none;
+    }
+    nav ul li{
+        float:right;
+    }
+    nav ul li a {
+        float: right;
+        padding: 11px 20px 0px 10px;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: Tahoma;
+        outline: none;
+    }
+</style>
+<head>
+    <script type="text/javascript">
+        var ws=null;
+        //开始建立连接
+        function connect() {
+            if("WebSocket" in window){
+                ws=new WebSocket("ws://127.0.0.1:8080/WebSocket/Websocket");
+            }
+            else{
+                alert("你的浏览器不支持WebSocket,请选择高级的版本!");
+                return;
+            }
+            //连接成功后触发onopen事件
+            ws.onopen=function () {setConnected(true);};
+            //收到消息后触发onmessage事件
+            ws.onmessage=function (e) { log("接受："+e.date); };
+            //连接关闭时触发onclose事件
+            ws.onclose=function(){ setConnected(false););}
+        }
+        //断开连接时
+        function disconnect() {
+            if(ws!=null){
+                ws.close();
+                ws=null;
+                //按钮发生变化
+                setConnected(false);
+            }
+        }
+        function echo() {
+            if(ws!=null){
+                var message=document.getElementById("message").value;
+                log("发送："+message);
+                ws.send(message);
+            }
+            else{
+                alert("WebSocket连接没有建立,请连接WebSocket");
+            }
+        }
+        function log(message) {
+            var console=document.getElementById('console');
+            var p=document.creatElement('p');
+            p.style.wordWrap='breakk-word';
+            //document.createElement()是在对象中创建一个对象,appendChild()方法在节点的子节点列表末添加新的子节点
+            p.appendChild(document.createTextNode(message));
+            console.appendChild(p);
+            //removeChild(node)方法删除指定的节点
+            while(console.childNodes.length>25){
+                console.removeChild(console.firstChild);
+            }
+            //scrollTop方法返回或设置滚动条的垂直位置
+            console.scrollTop=console.scrollHeight;
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>Attention</title>
+    <script  src="https://unpkg.com/vue"></script>
+</head>
+
+<body text="#68228B" onload="setInterval('clock()',1000)">
+<header class="top">
+
+    <nav class="gongneng">
+        <a href="main.html"><img class="headerLogo" width="210px" height="53px" src="../images/headerlogo.png"
+                                 alt="headerLogo"></a>
+        <ul >
+            <li><a href="login.html" title="注册" target="_blank">注册/登陆</a></li>
+            <li><a href="HistoryClass.html" title="历史课堂">历史课堂</a></li>
+            <li><a href="MyClass.html" title="我的课堂">我的课堂</a></li>
+        </ul>
+    </nav>
+</header>
+<div >
+    <div class="one">
+        <table >
+            <tr>
+                <td><div id="output"></div> </td>
+                <script>
+                    jQuery(function(){
+                        jQuery('#output').qrcode("http://jetienne.com");
+                    })
+                </script>
+                <td><div class="row">
+                    <div class="col-md-6">
+                    </div>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td><button style="margin-left:7px; margin-top: 15px; width:200px; height: 85px; border-radius: 55px; background:url(../images/创建课堂.png); background-size:100% 100% ;outline:none; " ></button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
