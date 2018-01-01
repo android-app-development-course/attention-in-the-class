@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <link href="../css/myStyle.css" rel="stylesheet" type="text/css" />
-
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.qrcode.min.js"></script>
+<link href="../css/myStyle.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../css/myTableStyle.css" type="text/css"/>
 <head>
     <meta charset="UTF-8">
     <title>Attention</title>
@@ -33,48 +36,74 @@
             font-family: Tahoma;
             outline: none;
         }
-        table table {
-            /*设置相邻单元格的边框间的距离*/
-            border-spacing: 1;
-            /*表格设置合并边框模型*/
-            border-collapse: collapse;
-            text-align: center;
-            width: 400px;
-            height: 250px;
+
+        #content {width:65%; max-width:690px; margin:6% auto 0;}
+
+        /*
+        Pretty Table Styling
+        CSS Tricks also has a nice writeup: http://css-tricks.com/feature-table-design/
+        */
+
+        table {
             overflow:hidden;
             border:1px solid #d3d3d3;
             background:#fefefe;
+            width:616px;
             margin:5% auto 0;
+            margin-top: 55px;
             -moz-border-radius:5px; /* FF1+ */
             -webkit-border-radius:5px; /* Saf3-4 */
             border-radius:5px;
             -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
             -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
         }
-        table table th  td {padding:18px 28px 18px; text-align:center; }
-        td  table th {padding-top:22px; text-shadow: 1px 1px 1px #fff; background:#e8eaeb;}
-        td table td {border-top:1px solid #e0e0e0; border-right:1px solid #e0e0e0;}
-        tr.odd-row td {background:#f6f6f6;}
-        td.first, th.first {text-align:left}
-        td.last {border-right:none;}
-        /*
-	Background gradients are completely unnecessary but a neat effect.
-	*/
 
-       td table td {
-            background: -moz-linear-gradient(100% 25% 90deg, #fefefe, #f9f9f9);
-            background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f9f9f9), to(#fefefe));
+        th, td {padding:18px 28px 18px; text-align:center; }
+
+        th {padding-top:10px; height: 15px; text-shadow: 1px 1px 1px #fff; background:#e8eaeb;}
+
+        td {border-top:1px solid #e0e0e0; border-right:1px solid #e0e0e0;}
+        thead  tr {
+
+            display: block;
+        }
+        tbody {
+            display: block;
+            height: 385px;
+            overflow: auto;
+        }
+        thead th {
+            height: 15px;
+            padding-top:10px;
+            text-shadow: 1px 1px 1px #fff;
+            background:#e8eaeb;
+        }
+        thead th{
+            width: 70px;
+        }
+        thead th +th{
+            width: 104px;
+        }
+        thead th +th +th{
+            width: 104px;
+        }
+        thead th +th+th+th{
+            width:106px;
+        }
+        /*584*/
+        tbody td {
+            width: 70px;
+        }
+        tbody td +td{
+            width: 104px;
+        }
+        tbody td+td+td {
+            width: 104px;
+        }
+        tbody td +td+td+td{
+            width: 106px;
         }
 
-        td table  tr.odd-row td {
-            background: -moz-linear-gradient(100% 25% 90deg, #f6f6f6, #f1f1f1);
-            background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f1f1f1), to(#f6f6f6));
-        }
-
-        td table  th {
-            background: -moz-linear-gradient(100% 20% 90deg, #e8eaeb, #ededed);
-            background: -webkit-gradient(linear, 0% 0%, 0% 20%, from(#ededed), to(#e8eaeb));
-        }
 </style>
 
 
@@ -206,29 +235,34 @@
     </nav>
 </header>
 <div >
-    <div class="one">
-        <table >
+    <div style="position:absolute;margin-left: 150px;margin-top:150px;width:150px;height:400px;">
+        <div>
+            <div id="output"></div>
+            <script>
+                jQuery(function(){
+                    jQuery('#output').qrcode("http://jetienne.com");
+                })
+            </script>
+        </div>
+        <div>
+            <button onclick="addRow()" style="margin-left:25px; margin-top: 15px; width:200px; height: 85px; border-radius: 10px; background:url(../images/开始上课.png); background-size:100% 100% ;outline:none; " ></button>
+        </div>
+    </div>
+    <div  style="position:absolute;height: 400px;width: 600px;left: 500px;top:55px ">
+        <table id="login_information" style="height: 400px; overflow:scroll">
+            <thead>
             <tr>
-                <td><image src="../images/二维码.png" /> </td>
-                <td><div class="row">
-                    <div class="col-md-6">
-                        <table id="login_information"cellspacing="10px" border="1">
-                            <tr>
-                                <th>序号</th>
-                                <th>姓名</th>
-                                <th>学号</th>
-                                <th>时间</th>
-                            </tr>
-                            <tr>
+                <th>序号</th>
+                <th>姓名</th>
+                <th>学号</th>
+                <th>时间</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
 
-                            </tr>
-                        </table>
-                    </div>
-                </div></td>
             </tr>
-            <tr>
-                <td><button onclick="addRow()" style="margin-left:7px; margin-top: 15px; width:200px; height: 85px; border-radius: 55px; background:url(../images/开始上课.png); background-size:100% 100% ;outline:none; " ></button></td>
-            </tr>
+            </tbody>
         </table>
     </div>
 </div>
