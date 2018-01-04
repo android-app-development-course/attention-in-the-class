@@ -98,8 +98,8 @@
         <img class="headerLogo" width="210px" height="53px" src="../images/headerlogo.png"
              alt="Starbuzz Coffee header logo image">
         <ul >
-            <li><a href="">历史课堂</a></li>
-            <li><a href="lesson.jsp">我的课堂</a></li>
+            <li><a href="class/hasEndClass.jsp">历史课堂</a></li>
+            <li><a href="mainpage.jsp">回到首页</a></li>
         </ul>
     </nav>
 

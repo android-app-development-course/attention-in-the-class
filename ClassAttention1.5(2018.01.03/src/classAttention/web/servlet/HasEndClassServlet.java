@@ -6,6 +6,7 @@ import classAttention.service.ClassService;
 import classAttention.service.StudentInfoService;
 import classAttention.service.UserService;
 import com.google.gson.Gson;
+import yong.tool.servlet.BaseServlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -32,12 +33,13 @@ public class HasEndClassServlet extends RootServlet {
         return "A:" + new Gson().toJson(studentInfos);
     }
 
-    protected String historyClassList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public String historyClassList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String uid = request.getParameter("uid");
 
-        List<ClassInfo> classInfos = new ArrayList<>();
-        classInfos = classService.getByUid(uid);
+        List<ClassInfo> classInfos = classService.getByUid(uid);
 
+        //request.setAttribute("classInfos",classInfos);
+        //return "f:/forejsps/class/hasEndClass.jsp";
         return "A:" + new Gson().toJson(classInfos);
     }
 

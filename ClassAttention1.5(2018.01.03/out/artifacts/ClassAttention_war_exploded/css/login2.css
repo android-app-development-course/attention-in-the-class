@@ -4,10 +4,9 @@ html {
 body {
 	font-family:"Microsoft Yahei";
 	font-size:12px;
-	background: #fff url(../images/背景图2.jpg);
+	background: #fff url(../images/背景图.jpg);
 	background-attachment:fixed;
 	background-repeat:no-repeat;
-	margin:0px;
 	background-size:100% 100%;}
 ul {
 	padding:0;

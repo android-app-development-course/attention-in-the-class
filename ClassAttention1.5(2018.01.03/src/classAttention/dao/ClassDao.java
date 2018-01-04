@@ -31,7 +31,7 @@ public class ClassDao {
 
     public List<ClassInfo> getByUid(String uid){
         try{
-            String sql="select *` from classinfo where uid=?";
+            String sql="select * from classinfo where uid=?";
             return qr.query(sql, new BeanListHandler<>(ClassInfo.class), uid);
         }catch (SQLException e){
             throw new RuntimeException(e);

@@ -16,7 +16,7 @@
     <title>Attention</title>
     <style>
         body {
-            background-image: url("../images/背景图2.jpg");
+            background-image: url("../images/背景图.jpg");
             background-size: 100% 100%;
             background-attachment: fixed;
             background-repeat: no-repeat;
@@ -150,8 +150,8 @@
             </c:if>
             <c:if test="${user != null}">
                 <li class="myusername">${user.username}</li>
-                <li><a href="">历史课堂</a></li>
-                <li><a href="lesson.jsp">我的课堂</a></li>
+                <li><a href="class/hasEndClass.jsp">历史课堂</a></li>
+                <li><a href="${pageContext.request.contextPath }/StartClassServlet?username=${user.username}">我的课堂</a></li>
             </c:if>
         </ul>
     </nav>

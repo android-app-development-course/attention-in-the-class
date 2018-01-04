@@ -8,9 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>History</title>
 </head>
 <body>
-
+<form action="/HasEndClassServlet" method="post">
+    <input type="hidden" name="method" value="historyClassList"/>
+    <input type="hidden" name="uid" value="${user.uid}"/>
+    <input type="submit" value="submit">
+</form>
+<span>${classInfos}</span>
 </body>
 </html>

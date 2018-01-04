@@ -17,7 +17,7 @@
 
 <script>
     jQuery(function () {
-        jQuery('#output').qrcode("ws://10.243.6.27:8080/websocket/onClass/105");
+        jQuery('#output').qrcode("ws://10.243.6.27:8080/websocket/onClass/"+"${classId}");
     })
 </script>
 </body>

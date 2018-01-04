@@ -18,7 +18,6 @@ public class RootServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
 
 
-        OutputStream out = response.getOutputStream();
         /**
          * 1. 获取method参数，它是用户想调用的方法 2. 把方法名称变成Method类的实例对象 3. 通过invoke()来调用这个方法
          */
@@ -51,7 +50,9 @@ public class RootServlet extends HttpServlet {
                     } else if(start.equals("r")) {//前缀为r表示重定向
                         response.sendRedirect(request.getContextPath() + path);
                     } else if(start.equals("A")){
+                        OutputStream out = response.getOutputStream();
                         out.write(path.getBytes("utf-8"));
+                        out.close();
                     }
                 }
             }
