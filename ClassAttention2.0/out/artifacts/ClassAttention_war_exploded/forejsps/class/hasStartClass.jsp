@@ -246,7 +246,7 @@
 
 <div >
     <div style="position:absolute;margin-left: 150px;margin-top:80px;width:200px;height:400px;">
-        <div id="control" style="width: 256px; height: 256px;">
+        <div id="control">
             <div id="output" style="width: 256px; height: 256px;"></div>
             <script>
                 refresh();

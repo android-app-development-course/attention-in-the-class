@@ -60,9 +60,9 @@ public class StudentInfoInSql {
     public String toString() {
         return "StudentInfoInSql{" +
                 "sid=" + sid +
-                ", uid='" + uid + '\'' +
+                ", uid='" + uid +
                 ", classId=" + classId +
-                ", trueName='" + trueName + '\'' +
+                ", trueName='" + trueName +
                 ", schoolId='" + schoolId +
                 '}';
     }

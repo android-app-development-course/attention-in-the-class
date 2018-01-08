@@ -31,8 +31,7 @@ public class HasEndClassServlet extends RootServlet {
 
         userService.havingClass(uid, -1);
 
-        List<StudentInfoInSql> studentInfoInSqls = new ArrayList<>();
-        studentInfoInSqls = studentInfoService.getStudentInfoByClassId(classId);
+        List<StudentInfoInSql> studentInfoInSqls = studentInfoService.getStudentInfoByClassId(classId);
 
         response.setContentType("application/json;charset=utf-8");
         System.out.println(new Gson().toJson(studentInfoInSqls));
@@ -40,8 +39,11 @@ public class HasEndClassServlet extends RootServlet {
         return "f:/forejsps/class/hasEndClass.jsp";*/
         /*response.getWriter().print(new Gson().toJson(studentInfoInSqls).toString());
         response.getWriter().close();*/
-        request.getSession().setAttribute("studentInfos", new Gson().toJson(studentInfoInSqls));
-        return "f:/forejsps/class/hasEndClass.jsp";
+        /*request.getSession().setAttribute("studentInfos", new Gson().toJson(studentInfoInSqls));
+        return "f:/forejsps/class/hasEndClass.jsp";*/
+
+
+        return "A:" + new Gson().toJson(studentInfoInSqls);
     }
 
     public String historyClassList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -9,16 +9,16 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<link href="../../css/myStyle.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../../js/jquery.qrcode.min.js"></script>
+<link href="../css/myStyle.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery.qrcode.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="../../js/swiper-3.4.0.jquery.min.js" ></script>
-<script src="../../js/bootstrap.js"></script>
-<script src="../../js/vue.js"></script>
+<script type="text/javascript" src="../js/swiper-3.4.0.jquery.min.js" ></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/vue.js"></script>
 
 <style>
     body{
-        background-image:url("../../images/背景图.jpg");
+        background-image:url("../images/背景图.jpg");
         background-size:100% 100%;
         background-attachment:fixed;
         background-repeat:no-repeat;
@@ -84,32 +84,32 @@
         background:#e8eaeb;
     }
     thead th{
-        width:150px;
+        width:110px;
     }
     thead th +th{
-        width:150px;
+        width:110px;
     }
     thead th +th +th{
-        width:150px;
+        width:110px;
     }
     thead th +th+th+th{
-        width:150px;
+        width:110px;
     }
     thead th +th+th+th+th{
-        width:150px
+        width:110px;
     }
     /*584*/
     tbody td {
-        width:150px;
+        width:110px;
     }
     tbody td +td{
-        width:150px;
+        width:110px;
     }
     tbody td+td+td {
-        width:150px;
+        width:110px;
     }
     tbody td +td+td+td{
-        width:150px;
+        width:110px;
     }
     tbody td +td+td+td+td{
         width:110px;
@@ -269,11 +269,13 @@
         })
         */
         window.onload = function(){
+
             new Vue({
                 el:'#box',
                 data:{
                     myData:[],
                     Index:"",
+                    ClassName:"",
                     People:"",
                     Time:"",
                     nowIndex:-100
@@ -281,9 +283,9 @@
                 methods:{
                     add:function(){
                         this.myData.push({
-                            ClassID:" 1",
-                            People:"3 ",
-                            Time:"2018年1月5日"
+                            ClassName:" 111",
+                            People:"222 ",
+                            Time:"333 "
                         })
                     },
                     del:function(n){
@@ -307,7 +309,9 @@
             var two=varrow.insertCell(1);
             var three=varrow.insertCell(2);
             var four=varrow.insertCell(3);
+            var five=varrow.insertCell(4);
             one.innerHTML=nowsrow;
+
             //添加课堂名称
             two.innerHTML="历史";
             //添加参与人数
@@ -320,31 +324,7 @@
                 '                <li><img src="../images/Delete.png" alt onclick="Delete()" style="width: 40p;height: 40px;"></li>\n' +
                 '            </ul></td>'
             nowsrow=nowsrow+1;
-            //滑动条最底下
-            varrow.scrollTop = varrow.scrollHeight;
-        }
-        function test(){
-            //增加一行
-            var nowsrow=1;
-            var varrow=document.getElementById('history_information').insertRow(nowsrow);
 
-            var one=varrow.insertCell(0);
-            var two=varrow.insertCell(1);
-            var three=varrow.insertCell(2);
-            var four=varrow.insertCell(3);
-            one.innerHTML=nowsrow;
-            //添加课堂名称
-            two.innerHTML="历史";
-            //添加参与人数
-            two.innerHTML="50";
-            //添加结束时间
-            three.innerHTML="2018年1月5日";
-            //添加按钮图标
-            five.innerHTML='<ul>\n' +
-                '                <li><img src="../images/Look.png" onclick="Look()" style="width: 40p;height: 40px; margin-right: 15px;"></li>\n' +
-                '                <li><img src="../images/Delete.png" alt onclick="Delete()" style="width: 40p;height: 40px;"></li>\n' +
-                '            </ul></td>'
-            nowsrow=nowsrow+1;
             //滑动条最底下
             varrow.scrollTop = varrow.scrollHeight;
         }
@@ -362,7 +342,8 @@
     <table  id="history_information" style="height: 400px; overflow:scroll" >
         <thead>
         <tr>
-            <th>课堂编号</th>
+            <th>序号</th>
+            <th>课堂名称</th>
             <th>参与人数</th>
             <th>课堂时间</th>
             <th>操作</th>
@@ -371,11 +352,12 @@
         <tbody>
         <tr  v-for="item in myData">
             <td>{{$index+1}}</td>
+            <td>{{item.ClassName}}</td>
             <td>{{item.People}}</td>
             <td>{{item.Time}}</td>
             <td><ul>
-                <li><a  href="hasEndClass.jsp"><img  v-on:click="nowIndex=$index" src="../../images/Look.png" style="width: 40p;height: 40px; margin-right: 15px;"></a></li>
-                <li><img data-toggle="modal" data-target="#layer" v-on:click="nowIndex=$index" src="../../images/Delete.png" style="width: 40p;height: 40px;"></li>
+                <li><a  onclick=""><img  v-on:click="nowIndex=$index" src="../images/Look.png" style="width: 40p;height: 40px; margin-right: 15px;"></a></li>
+                <li><img data-toggle="modal" data-target="#layer" v-on:click="nowIndex=$index" src="../images/Delete.png" style="width: 40p;height: 40px;"></li>
             </ul></td>
         </tr>
         </tbody>

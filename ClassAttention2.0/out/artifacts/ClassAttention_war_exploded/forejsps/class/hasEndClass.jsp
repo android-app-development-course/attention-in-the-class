@@ -170,7 +170,7 @@
     <script  src="https://unpkg.com/vue"></script>
 </head>
 
-<body onload="test()" >
+<body >
 <header class="top">
 
     <nav class="gongneng">
@@ -214,72 +214,46 @@
             varrow.scrollTop = varrow.scrollHeight;
         }
         */
-    function test() {
-        var nowsrow=1;
-        var varrow=document.getElementById('student_information').insertRow(nowsrow);
-
-        var one=varrow.insertCell(0);
-        var two=varrow.insertCell(1);
-        var three=varrow.insertCell(2);
-        var four=varrow.insertCell(3);
-        one.innerHTML="20152100188";
-
-        //添加名字
-        two.innerHTML="许博勇";
-        //添加学号
-        three.innerHTML="3分4秒";
-        //添加使用情况
-        four.innerHTML="微信：2分1秒  "+"百词斩：1分3秒"
-        nowsrow=nowsrow+1;
-
-        //滑动条最底下
-        varrow.scrollTop = varrow.scrollHeight;
-        var varrow=document.getElementById('student_information').insertRow(nowsrow);
-        var one=varrow.insertCell(0);
-        var two=varrow.insertCell(1);
-        var three=varrow.insertCell(2);
-        var four=varrow.insertCell(3);
-        one.innerHTML="20152100018";
-
-        //添加名字
-        two.innerHTML="周锐良";
-        //添加学号
-        three.innerHTML="2分28秒";
-        //添加使用情况
-        four.innerHTML="淘宝：1分30秒  "+"驾校宝典：58秒"
-        nowsrow=nowsrow+1;
-        //滑动条最底下
-        varrow.scrollTop = varrow.scrollHeight;
-        var varrow=document.getElementById('student_information').insertRow(nowsrow);
-        var one=varrow.insertCell(0);
-        var two=varrow.insertCell(1);
-        var three=varrow.insertCell(2);
-        var four=varrow.insertCell(3);
-        one.innerHTML="20152100003";
-
-        //添加名字
-        two.innerHTML="孔庆莱";
-        //添加学号
-        three.innerHTML="3分08秒";
-        //添加使用情况
-        four.innerHTML="微博：1分40秒"+"NGA玩家社区：1分28秒  ";
-        nowsrow=nowsrow+1;
-    }
-    /*
-    $.ajax({
-        url:'http://localhost:8080/HasEndClassServlet?method=endClassList&uid=${user.uid}&classId=${classId}',
+    $(document).ready(function () {
+        $.ajax({
+            url:'http://localhost:8080/HasEndClassServlet?method=endClassList&uid=${user.uid}&classId=${classId}',
             type:'Post',
             dataType:"json",
             success:function (result) {
-                var message = ${studentInfos};
-                document.getElementById('message').innerHTML += ${studentInfos};
-                //使用jq解析json
-                var parsedJSON=$.parseJSON(result);
-                alert(parsedJSON);
                 var nowsrow=1;//计算当前行数
-                document.getElementById('message').innerHTML += result;
+                //使用js解析jsonarry
+                for(var i in result) {
+                    //增加一行
+                    var varrow = document.getElementById('student_information').insertRow(nowsrow);
+                    var one = varrow.insertCell(0);
+                    var two = varrow.insertCell(1);
+                    var three = varrow.insertCell(2);
+                    var four = varrow.insertCell(3);
+                    one.innerHTML = result[i].schoolId;
 
-                document.createStyleSheet();
+                    //添加名字
+                    two.innerHTML = result[i].trueName;
+                    //添加不在线时间
+             //       three.innerHTML = result[i].appInfoList.appUsedTime;
+
+                    //添加使用情况
+                    four.innerHTML ="";
+                    for(var j in result[i].appInfoList)
+                    {
+
+                    }
+                    var temp=JSON.stringify(result[i].appInfoList).toString();
+                    var temp=temp.Replace('\\','');
+                    four.innerHTML=four.innerHTML+temp;
+                    for(var j in temp){
+
+                    }
+
+                    //行数加1
+                    nowsrow = nowsrow + 1;
+                    //滑动条最底下
+                    varrow.scrollTop = varrow.scrollHeight;
+                }
             },
             error:function (XMLHttpRequest, textStatus, errorThrown) {
                 alert(textStatus);
@@ -287,8 +261,7 @@
             }
 
         })
-        */
-    window.onload = test();
+    })
 </script>
 <div id="message">
 

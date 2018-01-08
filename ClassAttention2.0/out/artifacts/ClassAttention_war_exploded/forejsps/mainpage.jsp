@@ -52,7 +52,7 @@
         .one {
             display: table;
             margin: 0 auto;
-            margin-top: 130px;
+            margin-top: 160px;
         }
 
         .top {
@@ -161,12 +161,17 @@
     <div class="one">
         <table>
             <tr>
-                <img src="../images/logo.png" style="height: 200px;width: 170px; margin-left:10px;margin-bottom: 0px;">
+                <td>
+                    <div class="row">
+                        <div class="col-md-6">
+                        </div>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>
                     <button
-                            style="margin-left:0px; margin-top: 5px; width:200px; height: 85px; border-radius: 10px;
+                            style="margin-left:7px; margin-top: 15px; width:200px; height: 85px; border-radius: 55px;
                         background:url(../images/创建课堂.png); background-size:100% 100% ; outline:none; "
                             onclick="window.location.href='${pageContext.request.contextPath }/StartClassServlet?username=${user.username}'">
                     </button>

@@ -23,8 +23,8 @@
       <file leaf-file-name="hasStartClass.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/forejsps/class/hasStartClass.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4788">
-              <caret line="252" column="51" lean-forward="false" selection-start-line="252" selection-start-column="51" selection-end-line="252" selection-end-column="51" />
+            <state relative-caret-position="4826">
+              <caret line="254" column="56" lean-forward="false" selection-start-line="254" selection-start-column="56" selection-end-line="254" selection-end-column="56" />
               <folding>
                 <marker date="1515092838672" expanded="true" signature="12306:12337" ph="..." />
                 <marker date="1515092838672" expanded="true" signature="12481:12512" ph="..." />
@@ -37,92 +37,85 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="创建课堂.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out/artifacts/ClassAttention_war_exploded/images/创建课堂.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="hasEndClass.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/forejsps/class/hasEndClass.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5016">
-              <caret line="264" column="52" lean-forward="false" selection-start-line="264" selection-start-column="52" selection-end-line="264" selection-end-column="52" />
+            <state relative-caret-position="4655">
+              <caret line="245" column="51" lean-forward="false" selection-start-line="245" selection-start-column="51" selection-end-line="245" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hasStartClass.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out/artifacts/ClassAttention_war_exploded/forejsps/class/hasStartClass.jsp">
+      <file leaf-file-name="StudentInfoDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classAttention/dao/StudentInfoDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5282">
-              <caret line="278" column="18" lean-forward="false" selection-start-line="278" selection-start-column="18" selection-end-line="278" selection-end-column="18" />
-              <folding>
-                <marker date="1515128651139" expanded="true" signature="12343:12374" ph="..." />
-                <marker date="1515128651139" expanded="true" signature="12518:12549" ph="..." />
-                <marker date="1515128651139" expanded="true" signature="12693:12724" ph="..." />
-                <marker date="1515128651139" expanded="true" signature="12868:12899" ph="..." />
-                <marker date="1515128651139" expanded="true" signature="13043:13074" ph="..." />
-                <marker date="1515128651139" expanded="true" signature="13216:13247" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mainpage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/forejsps/mainpage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2793">
-              <caret line="147" column="41" lean-forward="false" selection-start-line="147" selection-start-column="41" selection-end-line="147" selection-end-column="41" />
+            <state relative-caret-position="323">
+              <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="historylesson.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/out/artifacts/ClassAttention_war_exploded/forejsps/class/historylesson.jsp">
+      <file leaf-file-name="StudentInfoService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classAttention/service/StudentInfoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="286" column="26" lean-forward="false" selection-start-line="286" selection-start-column="26" selection-end-line="286" selection-end-column="26" />
+            <state relative-caret-position="228">
+              <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
               <folding>
-                <marker date="1515132803548" expanded="true" signature="8320:8364" ph="..." />
-                <marker date="1515132803548" expanded="true" signature="8476:8500" ph="..." />
-                <marker date="1515132803548" expanded="true" signature="9354:9398" ph="..." />
-                <marker date="1515132803548" expanded="true" signature="9510:9534" ph="..." />
+                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#507#508#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="headerlogo.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/images/headerlogo.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out/artifacts/ClassAttention_war_exploded/js/bootstrap.js">
+      <file leaf-file-name="StudentInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classAttention/domain/StudentInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="97" lean-forward="false" selection-start-line="6" selection-start-column="97" selection-end-line="6" selection-end-column="97" />
+            <state relative-caret-position="30">
+              <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hasEndClass.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out/artifacts/ClassAttention_war_exploded/forejsps/class/hasEndClass.jsp">
+      <file leaf-file-name="StudentInfoInSql.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/classAttention/domain/StudentInfoInSql.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3496">
-              <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-              <folding>
-                <marker date="1515133589208" expanded="true" signature="2114:2130" ph="{...}" />
-                <marker date="1515133589208" expanded="true" signature="9195:9196" ph="..." />
-                <marker date="1515133589208" expanded="true" signature="9195:9203" ph="..." />
-              </folding>
+            <state relative-caret-position="133">
+              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EndClassCollectStudentInfoServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classAttention/android/servlet/EndClassCollectStudentInfoServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HasEndClassServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classAttention/web/servlet/HasEndClassServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidJoinResearchServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classAttention/android/servlet/AndroidJoinResearchServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -209,8 +202,6 @@
         <option value="$PROJECT_DIR$/web/forejsps/class/hasStartClass.jsp" />
         <option value="$PROJECT_DIR$/src/classAttention/dao/StudentInfoDao.java" />
         <option value="$PROJECT_DIR$/src/classAttention/service/StudentInfoService.java" />
-        <option value="$PROJECT_DIR$/src/classAttention/domain/StudentInfoInSql.java" />
-        <option value="$PROJECT_DIR$/src/classAttention/web/servlet/HasEndClassServlet.java" />
         <option value="$PROJECT_DIR$/web/forejsps/class/historylesson.jsp" />
         <option value="$PROJECT_DIR$/web/forejsps/mainpage.jsp" />
         <option value="$PROJECT_DIR$/out/artifacts/ClassAttention_war_exploded/forejsps/mainpage.jsp" />
@@ -218,6 +209,8 @@
         <option value="$PROJECT_DIR$/out/artifacts/ClassAttention_war_exploded/forejsps/class/hasEndClass.jsp" />
         <option value="$PROJECT_DIR$/out/artifacts/ClassAttention_war_exploded/forejsps/class/historylesson.jsp" />
         <option value="$PROJECT_DIR$/web/forejsps/class/hasEndClass.jsp" />
+        <option value="$PROJECT_DIR$/src/classAttention/web/servlet/HasEndClassServlet.java" />
+        <option value="$PROJECT_DIR$/src/classAttention/domain/StudentInfoInSql.java" />
       </list>
     </option>
   </component>
@@ -264,44 +257,68 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ClassAttention1.6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClassAttention1.6" type="462c0819:PsiDirectoryNode" />
+              <item name="ClassAttention2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassAttention2.0" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ClassAttention1.6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClassAttention1.6" type="462c0819:PsiDirectoryNode" />
+              <item name="ClassAttention2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassAttention2.0" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ClassAttention1.6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClassAttention1.6" type="462c0819:PsiDirectoryNode" />
+              <item name="ClassAttention2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassAttention2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="classAttention" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClassAttention2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassAttention2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="classAttention" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClassAttention2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassAttention2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="classAttention" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClassAttention2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassAttention2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="classAttention" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClassAttention2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassAttention2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="classAttention" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ClassAttention1.6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClassAttention1.6" type="462c0819:PsiDirectoryNode" />
+              <item name="ClassAttention2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassAttention2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="classAttention" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="forejsps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ClassAttention1.6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClassAttention1.6" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="forejsps" type="462c0819:PsiDirectoryNode" />
-              <item name="class" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -824,11 +841,13 @@
       <workItem from="1515112745336" duration="13880000" />
       <workItem from="1515126862040" duration="7362000" />
       <workItem from="1515216876511" duration="594000" />
+      <workItem from="1515417369218" duration="9080000" />
+      <workItem from="1515427295003" duration="382000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="450801000" />
+    <option name="totallyTimeSpent" value="460263000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -852,8 +871,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.511713" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32492113" sideWeight="0.48828697" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32492113" sideWeight="0.48828697" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -864,8 +883,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3753943" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3753943" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -896,28 +915,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/classAttention/dao/ResearchDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-247">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/forejsps/historylesson.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/classAttention/web/servlet/AndroidAttendServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/forejsps/user/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/images/结束课程.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1032,13 +1029,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classAttention/dao/StudentInfoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/classAttention/domain/ClassInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-171">
@@ -1064,30 +1054,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="47" column="110" lean-forward="false" selection-start-line="47" selection-start-column="96" selection-end-line="47" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/classAttention/service/StudentInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/classAttention/domain/StudentInfoInSql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="64" column="41" lean-forward="false" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/classAttention/web/servlet/HasEndClassServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="43" column="51" lean-forward="false" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1117,7 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-285">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,7 +1090,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,9 +1102,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/ClassAttention_war_exploded/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="38">
           <caret line="6" column="97" lean-forward="false" selection-start-line="6" selection-start-column="97" selection-end-line="6" selection-end-column="97" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,13 +1114,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/ClassAttention_war_exploded/forejsps/class/hasEndClass.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3496">
-          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-          <folding>
-            <marker date="1515133589208" expanded="true" signature="2114:2130" ph="{...}" />
-            <marker date="1515133589208" expanded="true" signature="9195:9196" ph="..." />
-            <marker date="1515133589208" expanded="true" signature="9195:9203" ph="..." />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1165,7 +1123,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2793">
           <caret line="147" column="41" lean-forward="false" selection-start-line="147" selection-start-column="41" selection-end-line="147" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1173,29 +1130,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5282">
           <caret line="278" column="18" lean-forward="false" selection-start-line="278" selection-start-column="18" selection-end-line="278" selection-end-column="18" />
-          <folding>
-            <marker date="1515128651139" expanded="true" signature="12343:12374" ph="..." />
-            <marker date="1515128651139" expanded="true" signature="12518:12549" ph="..." />
-            <marker date="1515128651139" expanded="true" signature="12693:12724" ph="..." />
-            <marker date="1515128651139" expanded="true" signature="12868:12899" ph="..." />
-            <marker date="1515128651139" expanded="true" signature="13043:13074" ph="..." />
-            <marker date="1515128651139" expanded="true" signature="13216:13247" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/forejsps/class/hasEndClass.jsp">
+    <entry file="file://$PROJECT_DIR$/web/forejsps/class/historylesson.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5016">
-          <caret line="264" column="52" lean-forward="false" selection-start-line="264" selection-start-column="52" selection-end-line="264" selection-end-column="52" />
-          <folding />
+        <state relative-caret-position="335">
+          <caret line="287" column="37" lean-forward="false" selection-start-line="287" selection-start-column="34" selection-end-line="287" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/ClassAttention_war_exploded/images/创建课堂.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/ClassAttention_war_exploded/forejsps/class/historylesson.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1534">
+          <caret line="292" column="43" lean-forward="false" selection-start-line="292" selection-start-column="43" selection-end-line="292" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/gson-2.8.2.jar!/com/google/gson/Gson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-247">
+          <caret line="357" column="62" lean-forward="false" selection-start-line="357" selection-start-column="54" selection-end-line="357" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/forejsps/class/hasStartClass.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4788">
-          <caret line="252" column="51" lean-forward="false" selection-start-line="252" selection-start-column="51" selection-end-line="252" selection-end-column="51" />
+        <state relative-caret-position="4826">
+          <caret line="254" column="56" lean-forward="false" selection-start-line="254" selection-start-column="56" selection-end-line="254" selection-end-column="56" />
           <folding>
             <marker date="1515092838672" expanded="true" signature="12306:12337" ph="..." />
             <marker date="1515092838672" expanded="true" signature="12481:12512" ph="..." />
@@ -1207,32 +1174,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/forejsps/class/historylesson.jsp">
+    <entry file="file://$PROJECT_DIR$/web/forejsps/class/hasEndClass.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="287" column="37" lean-forward="false" selection-start-line="287" selection-start-column="34" selection-end-line="287" selection-end-column="37" />
+        <state relative-caret-position="4655">
+          <caret line="245" column="51" lean-forward="false" selection-start-line="245" selection-start-column="51" selection-end-line="245" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classAttention/dao/StudentInfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classAttention/android/servlet/AndroidJoinResearchServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classAttention/web/servlet/HasEndClassServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classAttention/service/StudentInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
           <folding>
-            <marker date="1515125271808" expanded="true" signature="8383:8427" ph="..." />
-            <marker date="1515125271808" expanded="true" signature="8539:8563" ph="..." />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/ClassAttention_war_exploded/images/创建课堂.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/classAttention/domain/StudentInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/ClassAttention_war_exploded/forejsps/class/historylesson.jsp">
+    <entry file="file://$PROJECT_DIR$/src/classAttention/android/servlet/EndClassCollectStudentInfoServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="286" column="26" lean-forward="false" selection-start-line="286" selection-start-column="26" selection-end-line="286" selection-end-column="26" />
-          <folding>
-            <marker date="1515132803548" expanded="true" signature="8320:8364" ph="..." />
-            <marker date="1515132803548" expanded="true" signature="8476:8500" ph="..." />
-            <marker date="1515132803548" expanded="true" signature="9354:9398" ph="..." />
-            <marker date="1515132803548" expanded="true" signature="9510:9534" ph="..." />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classAttention/domain/StudentInfoInSql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
