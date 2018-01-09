@@ -228,7 +228,7 @@
 </header>
 <%
     String path = request.getContextPath();
-    String basePath = "ws://" + "10.243.20.37" + ":" + "8080"/*request.getServerPort()*/ + path + "/webSocket/onClass/";
+    String basePath = "ws://" + InetAddress.getLocalHost().getHostAddress() + ":" + "8080"/*request.getServerPort()*/ + path + "/webSocket/onClass/";
     request.setAttribute("basePath", basePath);
 %>
 
@@ -448,7 +448,7 @@
     </script>
     <script type="text/javascript">
         var websocket = null;
-        websocket = new WebSocket("ws://10.243.20.37:8080/webSocket/onClass/${classId}");
+        websocket = new WebSocket("${basePath}${classId}");
         //setMessageInnerHTML("ws://localhost:8080/webSocket/onClass/${classId}");
         //websocket = new WebSocket("ws://5108c29d.nat123.net:54515/webSocket/onClass/${classId}");
         //setMessageInnerHTML("ws://5108c29d.nat123.net:54515/webSocket/onClass/${classId}");

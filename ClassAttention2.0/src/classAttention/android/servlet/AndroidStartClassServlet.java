@@ -17,28 +17,28 @@ import java.net.InetAddress;
 import java.sql.Timestamp;
 import java.util.Date;
 
-@WebServlet(name = "AndroidStartClassServlet", urlPatterns ="/AndroidStartClassServlet" )
+@WebServlet(name = "AndroidStartClassServlet", urlPatterns = "/AndroidStartClassServlet")
 public class AndroidStartClassServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ClassService classService = new ClassService();
         UserService userService = new UserService();
-        String acceptJson = GetJsonServlet.getJsonFromWeb(request);
-        JsonObject jsonObject = new JsonParser().parse(acceptJson).getAsJsonObject();
-        String uid = jsonObject.get("uid").getAsString();
-        String basePath = "ws://" + InetAddress.getLocalHost().getHostAddress() + ":" +request.getServerPort()+ request.getContextPath() + "/webSocket/onClass/";
-        if (userService.getUserByUid(uid).getHavingClass()==-1){
+        String uid = GetJsonServlet.getJsonFromWeb(request);
+        System.out.println(uid);
+        //JsonObject jsonObject = new JsonParser().parse(acceptJson).getAsJsonObject();
+        //String uid =  request.getParameter("uid");
+        String basePath = "ws://" + InetAddress.getLocalHost().getHostAddress() + ":" + request.getServerPort() + request.getContextPath() + "/webSocket/onClass/";
+        if (userService.getUserByUid(uid).getHavingClass() == -1) {
             Timestamp timeStamp = new Timestamp(new Date().getTime());
             ClassInfo classInfo = new ClassInfo();
             classInfo.setUid(uid);
             classInfo.setStartClassTime(timeStamp);
             classService.startClass(classInfo);
-            response.getOutputStream().write((basePath+classService.getClassInfo(uid, timeStamp).getClassId()).getBytes("utf8"));
-        }
-        else
-            response.getOutputStream().write((basePath+userService.getUserByUid(uid).getHavingClass()).getBytes("utf8"));
+            response.getOutputStream().write((basePath + classService.getClassInfo(uid, timeStamp).getClassId()).getBytes("utf8"));
+        } else
+            response.getOutputStream().write((basePath + userService.getUserByUid(uid).getHavingClass()).getBytes("utf8"));
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request,response);
+        doPost(request, response);
     }
 }

@@ -8,6 +8,9 @@ import classAttention.service.ClassService;
 import classAttention.service.StudentInfoService;
 import classAttention.service.UserService;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import yong.tool.servlet.BaseServlet;
 
 import javax.servlet.ServletException;
@@ -28,13 +31,11 @@ public class HasEndClassServlet extends RootServlet {
     public String endClassList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String uid = request.getParameter("uid");
         int classId = Integer.parseInt(request.getParameter("classId"));
-
         userService.havingClass(uid, -1);
 
-        List<StudentInfoInSql> studentInfoInSqls = studentInfoService.getStudentInfoByClassId(classId);
-
-        response.setContentType("application/json;charset=utf-8");
-        System.out.println(new Gson().toJson(studentInfoInSqls));
+        System.out.println(studentInfoService.getStudentInfoJsonByClassId(classId));
+        //response.setContentType("application/json;charset=utf-8");
+        //System.out.println(new Gson().toJson(studentInfoInSqls));
         /*request.setAttribute("studentInfos",studentInfoInSqls);
         return "f:/forejsps/class/hasEndClass.jsp";*/
         /*response.getWriter().print(new Gson().toJson(studentInfoInSqls).toString());
@@ -42,8 +43,7 @@ public class HasEndClassServlet extends RootServlet {
         /*request.getSession().setAttribute("studentInfos", new Gson().toJson(studentInfoInSqls));
         return "f:/forejsps/class/hasEndClass.jsp";*/
 
-
-        return "A:" + new Gson().toJson(studentInfoInSqls);
+        return "A:" +studentInfoService.getStudentInfoJsonByClassId(classId);
     }
 
     public String historyClassList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -15,8 +15,9 @@ public class StudentInfoService {
     }
 
 
-    public List<StudentInfoInSql> getStudentInfoByClassId(int classId){
-        return studentInfoDao.getByClassId(classId);
+    public String getStudentInfoJsonByClassId(int classId){
+        //System.out.println(studentInfoDao.getByClassId(classId).get(0).getAppInfoList().toString());
+        return studentInfoDao.getJsonByClassId(classId);
     }
 
     public String getStudentInfoBySid(int sid){
