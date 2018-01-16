@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="F:\UIsimple\UIsimple\app\libs\Java-WebSocket-1.3.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e842df4d47bcdc24cc8c8221cd5f2e3e743f2709">
+        <dex dex="F:\UIsimple\UIsimple\app\build\intermediates\pre-dexed\debug\Java-WebSocket-1.3.6_708292be7712391b371484e99c43c154121d6b30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ending\.android\build-cache\4608262e04d794ec8cd8cca0789beeeaf08f4628\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ac6948cce36f694f3eb3d73a135e298dc4b3527a">
+        <dex dex="F:\UIsimple\UIsimple\app\build\intermediates\pre-dexed\debug\classes_1f4af727948ee7af1bb000d1bdf77fd236d540ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ending\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="F:\UIsimple\UIsimple\app\build\intermediates\pre-dexed\debug\okio-1.13.0_9d4563bbf1669bac843312d843ae9920dd83da77.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ending\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.9.0\1b6c10b5120995a7542c1a31b7828fb8593c8ba\okhttp-3.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="01b6c10b5120995a7542c1a31b7828fb8593c8ba">
+        <dex dex="F:\UIsimple\UIsimple\app\build\intermediates\pre-dexed\debug\okhttp-3.9.0_13d9418e23791cce1b01e5f918be3e8f959f2c92.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ending\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.2\3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf\gson-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf">
+        <dex dex="F:\UIsimple\UIsimple\app\build\intermediates\pre-dexed\debug\gson-2.8.2_a2fda07b19366b2baf6072da9d1153b368c06a03.jar" />
+    </item>
+
+</items>
